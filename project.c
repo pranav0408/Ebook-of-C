@@ -3,7 +3,7 @@
 #include<string.h>
 #include<unistd.h>
 
-int i,cc;
+int i,n,cc;
 char move;
 char ch[100];
 char c[99];
@@ -12,13 +12,60 @@ char input[10];
 
 
 int main()
-{ system("cls");
+{
+  system("cls");
+  system("color 0c");
   printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
   printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
-  printf("\n*\t\t\t\t\t\t\t                     WELCOME                    \t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t|     |  ___  |     ____   ___   __ __   ___    \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|     | |_    |    |      |   | |  |  | |_      \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|__|__| |___  |___ |____  |___| |     | |___    \t\t\t\t\t\t*\n");
   printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
   printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n\n\n\n");
-  sleep(2);
+  sleep(3);
+
+
+  system("cls");
+  system("color 0b");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t|     |  ___  |     ____   ___   __ __   ___    \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|     | |_    |    |      |   | |  |  | |_      \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|__|__| |___  |___ |____  |___| |     | |___    \t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\tThe interface will start in 3 seconds\n");
+  sleep(1);
+
+
+  system("cls");
+  system("color 0a");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t|     |  ___  |     ____   ___   __ __   ___    \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|     | |_    |    |      |   | |  |  | |_      \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|__|__| |___  |___ |____  |___| |     | |___    \t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\tThe interface will start in 2 seconds\n");
+  sleep(1);
+
+
+  system("cls");
+  system("color 0e");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t|     |  ___  |     ____   ___   __ __   ___    \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|     | |_    |    |      |   | |  |  | |_      \t\t\t\t\t\t*");
+  printf("\n*\t\t\t\t\t\t\t|__|__| |___  |___ |____  |___| |     | |___    \t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\t************************************************\t\t\t\t\t\t*\n");
+  printf("\n*\t\t\t\t\t\t\tThe interface will start in 1 seconds\n");
+  sleep(1);
+
+
+
+system("color 07");
 FILE *p;
 AA:
 system("cls");
@@ -30,6 +77,7 @@ printf("*\t\t\t\t\t\t->Enter 2 to see examples of C program\t\t\t\t             
 printf("*\t\t\t\t\t\t->Enter 3 to open editor and test your custom program\t\t\t\t                        *\n");
 printf("*\t\t\t\t\t\t->Enter 4 to save your custom program into the workbook            \t\t\t\t        *\n");
 printf("*\t\t\t\t\t\t->Enter 5 to see source code of the program                        \t\t\t\t        *\n");
+printf("*\t\t\t\t\t\t->Enter 6 to exit the interface                                    \t\t\t\t        *\n");
 printf("\n*\t\t\t\t\t\t**************************************************************     \t\t\t\t\t*\n");
 printf("\n*\t\t\t\t\t\t**************************************************************     \t\t\t\t\t*\n");
 
@@ -37,11 +85,27 @@ scanf("%d",&cc);
 system("cls");
 switch (cc)
 {
+case 6:
+     n=3;
+    while(n>0)
+    {
+     system("cls");
+      printf("\n\n\n\n\n\n\n\n\n\n\n\n");
+      printf("\t\t\t\t******************************************************************\n");
+      printf("\t\t\t\t ____            _______       |  __                   \n");
+      printf("\t\t\t\t|____  |__| |  |    |       ___| |  | |   | |\\ |           \n");
+      printf("\t\t\t\t ____| |  | |__|    |      |___| |__| |_|_| | \\|               \n ");
+      printf("\t\t\t\t                                                in %d seconds                 \n ",n--);
+      printf("\t\t\t\t******************************************************************\n");
+      sleep(1);
+    }
+      system("cls");
+      break;
 case 0:
 EE:
 
       system("cls");
-      printf("\n\n*\t0=Black  8=Gray        *\n");
+      printf("\n\n*\t0=Black  8=Gray            *\n");
       printf("*\t1=Blue   9=Light Blue      *\n");
       printf("*\t2=Green  A=Light Green     *\n");
       printf("*\t3=Aqua   B=Light Aqua      *\n");
@@ -428,7 +492,10 @@ FF:   system("cls");
       printf("*                               factn.c            ->Factorial of all number upto a limit                                           *\n");
       printf("*                               str.c              ->Sting concatination                                                            *\n");
       printf("*                               prime.c            ->Check whether a number is prime or not                                         *\n");
-      printf("\n\n*Enter a file name from above list or the name of file which you may have saved using option 4 from main menu with extension to view it*\n\n");
+      printf("\n\n          * Enter a file name with extension *\n");
+      printf("NOTE:\n");
+      printf("*  ->the filename can be from the above list                                       *\n");
+      printf("*  ->the filename can be the one you may have added using option 4 from main menu  *\n");
       scanf("%s",&command);
       system("cls");
       p=fopen(command,"r");
@@ -442,8 +509,8 @@ FF:   system("cls");
     fclose(p);
 
 ZZ: printf("\nEnter 1 if you want to compile the code entered\n");
-    printf("\nEnter 2 if you want to edit the entered code\n");
-
+    printf("\nEnter 2 if you want to go back to examples\n");
+    printf("\nEnter 3 if you want to go to the main menu\n");
     scanf("%d",&i);
    char cmd[]="gcc ";
     strcat(cmd,command);
@@ -461,13 +528,13 @@ ZZ: printf("\nEnter 1 if you want to compile the code entered\n");
 
   }
   if(i==2)
-  {  char edit[]="notepad ";
-     strcat(edit,command);
-     system(edit);
-     printf("-------------------------------------");
-     printf("-------------------------------------");
-  goto ZZ;
-}
+  {
+  goto FF;
+  }
+  if(i==3)
+  {
+  goto AA;
+  }
     printf("\nEnter 1 to go back to Examples \n");
     printf("Enter 2 to go back to main menu\n");
     scanf("%d",&i);
@@ -586,8 +653,8 @@ DD:
 
       }
       fclose(p);
-
-
+      char cmdd[]="gcc ";
+      strcat(cmdd,cp);
 
     Z:
       printf("\nEnter 1 if you want to compile the code entered\n");
@@ -595,10 +662,10 @@ DD:
 
       scanf("%d",&i);
 
-      strcat(cmd,cp);
+
     if(i==1)
     {  int temp;
-      if(system(cmd)==0)
+      if(system(cmdd)==0)
          { printf("COMPILATION SUCCESSFUL!\n\n\n");
          printf("Enter 1 to execute the program\n");
           scanf("%d",&temp);
@@ -606,11 +673,21 @@ DD:
             system("a");
           }
       else
-          printf("\n\nCOMPILATION FAILED!\n");
-
+          {
+            printf("\n\nCOMPILATION FAILED!\n");
+            printf("Enter 1 to edit the code\n");
+            printf("Enter 2 to terminate and go back to main menu\n");
+            scanf("%d",&temp);
+            if(temp==1)
+            {goto edit;}
+            else if (temp==2)
+            {goto AA;}
+          }
     }
     if(i==2)
-    {  char edit[]="notepad ";
+    {
+edit:  printf("\n");
+       char edit[]="notepad ";
        strcat(edit,command);
        system(edit);
        printf("-------------------------------------");
